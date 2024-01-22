@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Metal+Mania&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Permanent+Marker&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #eff5fd;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #257bd2;
+    margin-bottom: 20px;
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #428bca;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container ul li:hover {
+    background-color: #a6c8e9;
+}
+
+.container button {
+    width: 100%;
+    height: 40px;
+    background: #257bd2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: #1e5f9b;
+}
+
+.container .button-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container .h-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container .index {
+    margin: auto;
+    font-size: 14px;
+    color: #555;
+}
+
+.container .right {
+    background: #cce5ff;
+    border-color: #b8daff;
+}
+
+.container .wrong {
+    background: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.message {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.quit {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
+
+    .container ul li {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .container button {
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .container .index {
+        font-size: 12px;
+    }
+}
